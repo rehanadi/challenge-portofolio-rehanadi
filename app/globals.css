@@ -69,10 +69,15 @@
   --color-neutral-900: #181d27;
   --color-neutral-950: #0a0d12;
 
-  --color-primary-100: #e5f4fb;
-  --color-primary-200: #6fcfff;
-  --color-primary-300: #0093dd;
-  --color-primary-400: #050a1b;
+  --color-primary-100: #f3ebff;
+  --color-primary-200: #8b32ff;
+  --color-primary-300: #6600eb;
+  --color-primary-400: #160131;
+
+  --color-secondary-100: #fff7ef;
+  --color-secondary-200: #f3993f;
+  --color-secondary-300: #e17b0e;
+  --color-secondary-400: #492602;
 
   --color-base-white: #ffffff;
   --color-base-background: #0c0d0d;
@@ -194,7 +199,7 @@ body {
 @layer components {
   .custom-container {
     margin: 0 auto;
-    @apply max-w-302 pr-6 pl-6;
+    @apply max-w-302 px-6;
   }
 }
 
