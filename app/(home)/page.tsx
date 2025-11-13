@@ -2,6 +2,7 @@ import Hero from './partials/hero';
 import Navbar from './partials/navbar';
 import Profile from './partials/profile';
 import Roles from './partials/role';
+import Skill from './partials/skill';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Roles />
       <Profile />
+      <Skill />
     </div>
   );
 };

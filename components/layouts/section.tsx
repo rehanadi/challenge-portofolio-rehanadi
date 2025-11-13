@@ -25,7 +25,7 @@ export const Section: React.FC<SectionProps> = ({
       {/* heading */}
       {title && (
         <div className='text-center'>
-          <h2 className='display-sm-bold md:display-lg-bold text-neutral-25'>
+          <h2 className='display-sm-bold md:display-lg-bold text-neutral-950'>
             {title}
           </h2>
         </div>

@@ -8,7 +8,7 @@ import {
   skillIcons,
 } from '@/constants/profile-data';
 import { Icon } from '@iconify/react';
-import { Mail, Sparkle, Sparkles } from 'lucide-react';
+import { Mail, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
