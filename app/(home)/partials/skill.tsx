@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Skill = () => {
   return (
-    <Section title='My Profesional Skill' className='md:pt-10'>
+    <Section title='My Profesional Skill' className='md:gap-12 md:pt-10'>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5'>
         {skillData.map((skill, index) => (
           <SkillCard
