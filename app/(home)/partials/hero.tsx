@@ -1,6 +1,6 @@
 import FeatureCard from '@/components/ui/feature-card';
 import TextFit from '@/components/ui/textfit';
-import { FULLNAME } from '@/constants/profile-data';
+import { fullname } from '@/constants/profile-data';
 import { cn } from '@/lib/utils';
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section
-      className='relative h-screen overflow-hidden pt-25 text-white md:pt-36'
+      className='bg-primary-400 relative h-screen overflow-hidden pt-25 text-white md:pt-36'
       id='hero'
     >
       <div className={cn('custom-container', 'max-w-400')}>
@@ -17,12 +17,12 @@ const Hero = () => {
           maxSize={100}
           className='absolute z-20 leading-none font-extrabold uppercase'
         >
-          {FULLNAME}
+          {fullname}
         </TextFit>
       </div>
       <div className='flex-center absolute inset-x-0 bottom-0 z-40 mx-auto h-5/7'>
         <Image
-          src='/images/hero-person.png'
+          src='/images/hero/hero-person.png'
           alt='hero person'
           fill
           objectFit='contain'
@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <div className='flex-center absolute inset-x-0 bottom-0 z-10 mx-auto h-5/7'>
         <Image
-          src='/images/hero-bg.png'
+          src='/images/hero/hero-bg.png'
           alt='hero bg'
           fill
           objectFit='contain'
@@ -68,27 +68,27 @@ const Hero = () => {
         <p className='text-sm-medium text-neutral-25'>Global Clients</p>
         <div className='flex-center'>
           <Image
-            src='/images/avatar-1.png'
+            src='/images/avatar/avatar-1.png'
             alt='avatar'
             width={52}
             height={52}
           />
           <Image
-            src='/images/avatar-2.png'
-            alt='avatar'
-            width={52}
-            height={52}
-            className='-ms-2'
-          />
-          <Image
-            src='/images/avatar-3.png'
+            src='/images/avatar/avatar-2.png'
             alt='avatar'
             width={52}
             height={52}
             className='-ms-2'
           />
           <Image
-            src='/images/avatar-4.png'
+            src='/images/avatar/avatar-3.png'
+            alt='avatar'
+            width={52}
+            height={52}
+            className='-ms-2'
+          />
+          <Image
+            src='/images/avatar/avatar-4.png'
             alt='avatar'
             width={52}
             height={52}

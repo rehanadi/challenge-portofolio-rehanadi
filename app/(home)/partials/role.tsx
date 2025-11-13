@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Roles = () => {
   return (
-    <section className='inset-x-0 bottom-0 z-40 w-full -skew-2 overflow-hidden bg-neutral-950 py-10 transition'>
+    <section className='absolute z-40 w-full -translate-y-6 -rotate-0 overflow-hidden bg-neutral-950 py-10 transition'>
       <Marquee className='gap-6'>
         <SparkleIcon />
         <RoleTitle title='Expert React' />
