@@ -1,3 +1,4 @@
+import Advantage from './partials/advantage';
 import Hero from './partials/hero';
 import Navbar from './partials/navbar';
 import Profile from './partials/profile';
@@ -12,6 +13,7 @@ const Home = () => {
       <Roles />
       <Profile />
       <Skill />
+      <Advantage />
     </div>
   );
 };
