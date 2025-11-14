@@ -1,4 +1,5 @@
 import Advantage from './partials/advantage';
+import FAQ from './partials/faq';
 import Hero from './partials/hero';
 import LatestWork from './partials/latest-work';
 import Navbar from './partials/navbar';
@@ -10,7 +11,7 @@ import WorkExperience from './partials/work-experience';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Roles />
@@ -20,7 +21,8 @@ const Home = () => {
       <LatestWork />
       <WorkExperience />
       <Testimonial />
-    </div>
+      <FAQ />
+    </>
   );
 };
 

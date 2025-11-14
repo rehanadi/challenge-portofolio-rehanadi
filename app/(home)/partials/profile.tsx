@@ -157,10 +157,7 @@ const Profile = () => {
 
             <div className='flex-center absolute inset-x-0 bottom-7.25 z-30'>
               <Button asChild className='h-12 w-[233px]' variant='secondary'>
-                <Link
-                  href='#contact'
-                  className='hidden items-center gap-2 lg:flex'
-                >
+                <Link href='#contact' className='items-center gap-2'>
                   <Mail className='size-5' />
                   <span>Hire Me</span>
                 </Link>
