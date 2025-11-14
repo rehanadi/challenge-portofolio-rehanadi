@@ -1,4 +1,5 @@
 import Advantage from './partials/advantage';
+import Contact from './partials/contact';
 import FAQ from './partials/faq';
 import Hero from './partials/hero';
 import LatestWork from './partials/latest-work';
@@ -22,6 +23,7 @@ const Home = () => {
       <WorkExperience />
       <Testimonial />
       <FAQ />
+      <Contact />
     </>
   );
 };
