@@ -5,6 +5,7 @@ import Navbar from './partials/navbar';
 import Profile from './partials/profile';
 import Roles from './partials/role';
 import Skill from './partials/skill';
+import Testimonial from './partials/testimonial';
 import WorkExperience from './partials/work-experience';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Advantage />
       <LatestWork />
       <WorkExperience />
+      <Testimonial />
     </div>
   );
 };

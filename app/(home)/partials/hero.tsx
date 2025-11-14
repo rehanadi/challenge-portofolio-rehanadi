@@ -1,4 +1,5 @@
 import FeatureCard from '@/components/ui/feature-card';
+import Stars from '@/components/ui/stars';
 import TextFit from '@/components/ui/textfit';
 import { fullname } from '@/constants/profile-data';
 import { cn } from '@/lib/utils';
@@ -44,15 +45,7 @@ const Hero = () => {
         <h4 className='text-neutral-25 text-[2.5rem] leading-14 font-bold'>
           5.0
         </h4>
-        <div className='flex-center'>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <Icon
-              key={index}
-              icon='material-symbols:star-rounded'
-              className='text-secondary-200 size-8'
-            />
-          ))}
-        </div>
+        <Stars />
         <p className='text-sm-medium text-neutral-25'>
           Many Client Trust with me
         </p>
