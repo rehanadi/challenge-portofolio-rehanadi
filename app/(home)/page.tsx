@@ -5,6 +5,7 @@ import Navbar from './partials/navbar';
 import Profile from './partials/profile';
 import Roles from './partials/role';
 import Skill from './partials/skill';
+import WorkExperience from './partials/work-experience';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Skill />
       <Advantage />
       <LatestWork />
+      <WorkExperience />
     </div>
   );
 };
