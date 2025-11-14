@@ -44,7 +44,7 @@ const AdvantageCard = ({
         className
       )}
     >
-      <div className='flex-center'>{title}</div>
+      <div className='flex-center text-center'>{title}</div>
       <div className='flex-center'>
         <Image src='/icons/check.svg' alt='react' width={24} height={24} />
       </div>

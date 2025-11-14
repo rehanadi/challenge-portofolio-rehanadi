@@ -27,4 +27,11 @@ export const testimonialData: TestimonialData[] = [
     name: 'Jude Belingham',
     role: 'Vice President, Zoom',
   },
+  {
+    image: '/icons/company/trustpilot.svg',
+    review:
+      'Thanks to their expertise, our website is now faster, more responsive, and visually stunning. We’ve seen a significant increase in user engagement!',
+    name: 'Lamine Yamal',
+    role: 'Vice President, Trustpilot',
+  },
 ];

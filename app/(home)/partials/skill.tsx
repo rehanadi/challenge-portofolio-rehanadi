@@ -1,21 +1,42 @@
 import { Section } from '@/components/layouts/section';
 import { skillData } from '@/constants/skill-data';
+import { chunkSkills } from '@/lib/skills';
 import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNavigation,
+} from '@/components/ui/carousel';
 
 const Skill = () => {
+  const columns = chunkSkills(skillData, 3);
+
   return (
     <Section title='My Profesional Skill' className='md:gap-12 md:pt-10'>
-      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5'>
-        {skillData.map((skill, index) => (
-          <SkillCard
-            key={index}
-            title={skill.title}
-            image={skill.image}
-            description={skill.description}
-            progress={skill.progress}
-          />
-        ))}
-      </div>
+      <Carousel>
+        <CarouselContent>
+          {columns.map((column, columnIndex) => (
+            <CarouselItem
+              key={columnIndex}
+              className='md:basis-1/2 lg:basis-1/2'
+            >
+              <div key={columnIndex} className='flex flex-col gap-4 md:gap-5'>
+                {column.map((skill, rowIndex) => (
+                  <SkillCard
+                    key={rowIndex}
+                    title={skill.title}
+                    image={skill.image}
+                    description={skill.description}
+                    progress={skill.progress}
+                  />
+                ))}
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselNavigation />
+      </Carousel>
     </Section>
   );
 };
@@ -47,7 +68,8 @@ const SkillCard = ({
       <div className='flex-between gap-4'>
         <div className='h-3.5 flex-1 rounded-full bg-neutral-300'>
           <div
-            className={`bg-primary-300 h-full w-[${progress}]/100 rounded-full`}
+            className='bg-primary-300 h-full rounded-full'
+            style={{ width: `${progress}%` }}
           ></div>
         </div>
         <span className='text-sm-semibold md:text-lg-semibold shrink-0'>

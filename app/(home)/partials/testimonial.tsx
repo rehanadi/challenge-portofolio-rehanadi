@@ -5,15 +5,26 @@ import {
   testimonialData,
 } from '@/constants/testimonial-data';
 import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNavigation,
+} from '@/components/ui/carousel';
 
 const Testimonial = () => {
   return (
     <Section title='Success Stories from Clients'>
-      <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
-        {testimonialData.map((testimonial, index) => (
-          <TestimonialCard key={index} {...testimonial} />
-        ))}
-      </div>
+      <Carousel>
+        <CarouselContent>
+          {testimonialData.map((testimonial, index) => (
+            <CarouselItem key={index}>
+              <TestimonialCard key={index} {...testimonial} />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselNavigation />
+      </Carousel>
     </Section>
   );
 };
